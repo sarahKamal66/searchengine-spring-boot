@@ -1,25 +1,68 @@
-Search Engine Backend
-A backend search engine built with Spring Boot that uses an inverted index to rank and retrieve web pages by keyword frequency.
-Tech Stack
+# 🔍 Search Engine Backend System
 
-Java / Spring Boot
-Spring Data JPA
-H2 Database
-REST API
-Maven
+A backend-based search engine built using Java and Spring Boot that enables efficient text search using the inverted index technique.
 
-Features
+---
 
-Indexes text files and builds an inverted index stored in H2 database
-REST API endpoint that returns ranked URLs by word frequency
-Clean layered architecture: Entity / Repository / Service / Controller
+## 🚀 Features
+- Build and maintain an inverted index for fast text retrieval
+- Search for words and retrieve relevant documents
+- RESTful APIs for indexing and searching operations
+- Integrated with H2 database for data storage
+- Tested using Postman
 
-API Usage
-GET /api/search?word=example
-Returns a list of URLs ordered by how frequently the word appears.
-How to Run
+---
 
-Clone the repository
-Open with IntelliJ IDEA
-Run the project
-Use Postman or browser to call the API
+## 🛠️ Tech Stack
+- Java
+- Spring Boot
+- H2 Database
+- REST APIs
+- Maven
+- Postman
+
+---
+
+## 📌 API Endpoints
+
+### 1. Index Data
+**POST** `/index`
+- Adds documents to the search engine
+
+### 2. Search
+**GET** `/search?word=example`
+- Returns documents containing the searched word
+
+---
+
+## 🧠 How It Works
+- The system processes input text and builds an inverted index
+- Each word maps to a list of documents where it appears
+- Search queries are matched against the index for fast retrieval
+
+---
+
+## ▶️ How to Run
+1. Clone the repository
+2. Open in IntelliJ / Eclipse
+3. Run the Spring Boot application
+4. Use Postman to test APIs
+
+---
+
+## 📷 Example
+- Request: `/search?word=java`
+- Response: List of documents containing the word "java"
+
+---
+
+## 📈 Future Improvements
+- Ranking results based on relevance
+- Support for multiple keywords search
+- Pagination for results
+- Deploy the application
+
+---
+
+## 👩‍💻 Author
+Sara Kamal
