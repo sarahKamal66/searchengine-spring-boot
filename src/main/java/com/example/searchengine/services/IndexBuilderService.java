@@ -23,7 +23,7 @@ public class IndexBuilderService {
 
     @PostConstruct
     public void buildIndex() throws InterruptedException {
-        File folder = new File("C:/Users/sarak/Downloads/pages_backup (4)");
+        File folder = new File("pages");
         File[] files = folder.listFiles((dir, name) -> name.endsWith(".txt"));
         if (files == null || files.length == 0) return;
 
